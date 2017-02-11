@@ -1,19 +1,23 @@
 {
-  "name": "hangman-command-line",
+  "name": "package.json",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hangman in Node.js",
   "main": "Letter.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Johnb0t/hangman-command-line.git"
+    "url": "git+https://github.com/blupie01/hangman-command-line.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Johnb0t/hangman-command-line/issues"
+    "url": "https://github.com/blupie01/hangman-command-line/issues"
   },
-  "homepage": "https://github.com/Johnb0t/hangman-command-line#readme"
+  "homepage": "https://github.com/blupie01/hangman-command-line#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "inquirer": "^3.0.1"
+  }
 }

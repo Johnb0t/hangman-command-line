@@ -1,20 +1,15 @@
- var inquirer = require('inquirer');
-var Letter = require("./Letter.js");
-var Word = require("./Word.js");
+var inquirer = require("inquirer");
+var word = require("./word.js");
+var colors = require("colors");
 
-function checkWord() {
-	inquirer.prompt([
-		{
-			type: "output",
-			name: "dashedWord",
-			message: "Guess the letters for this word " + Letter.dashedWord
-		},
-		{
-			type: 'input',
-			name: 'userGuess',
-			message: 'Pick a letter: '
+var wordArray = ["SHIVA", "ZUES", "MINOTAUR", "MEDUSA", "AMATERASU",
+				"KYUUBI", "ISIS", "ANUBIS", "KALI"];
 
-		}
-])};
+var startGame = function() {
+	this.currentWord = new word(wordArray[Math.floor(Math.random() * wordArray.length)]);
 
-	checkWord();
+	this.lives = 10;
+	this.guesses = [];
+}
+
+var testWord = word("CIGS");
