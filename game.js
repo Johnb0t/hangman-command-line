@@ -18,31 +18,21 @@ var startGame = function() {
 	getWord = new Word(wordArray[Math.floor(Math.random() * wordArray.length)]);
 	word = getWord.word;
 	word = word.toUpperCase();
-	console.log(word);
-	console.log("word: " + word);
-	console.log("getWord: " + getWord);
+	
+	console.log("=======================================");
+	console.log("Welcome To The Video Game Hangman Game!");
+	console.log("=======================================");
+	console.log("  Guess the word, you may need spaces");
+	console.log("=======================================");
 	// var lives = 10;
 
 	for (var i = 0; i < word.length; i++) {
 		lettersArray.push(new Letter(word[i]));
 	};
 
-	console.log(lettersArray);
 	getGuess(getWord, lettersArray);
 }
-// var getWord = new Word(wordArray[Math.floor(Math.random() * wordArray.length)]);
-// var word = getWord.word;
-// console.log("word: " + word);
-// console.log("getWord: " + getWord);
-// var lives = 10;
-// var guessesArray = [];
-// var lettersArray = [];
 
-// for (var i = 0; i < word.length; i++) {
-// 	lettersArray.push(new Letter(word[i]));
-// };
-
-// console.log(lettersArray);
 
 var getGuess = function() {
 	// displayWord(lettersArray);
